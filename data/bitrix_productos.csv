@@ -1,0 +1,301 @@
+id,name,code,active,section_id,section_name,parent_section_id,parent_section_name
+394,Endress+Hauser-Otros,,Y,207,001 UN AU,,
+396,ActuadoresElec.Auma,,Y,211,003 UN VA,,
+398,Evoqua-Xylem.W&T,,Y,209,002 UN AI,,
+400,Hawle,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+402,KSH,,Y,312,Otras Marcas UNAI No Repres,209,002 UN AI
+404,McCrometer,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+406,MSA,,Y,207,001 UN AU,,
+408,Sewer,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+410,Quimicos.UGSI,,Y,209,002 UN AI,,
+412,Ultimo,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+414,Ameritrol,,Y,207,001 UN AU,,
+416,Canalta,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+418,Columbiana,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+420,Comet System,,Y,310,Otras Marcas UNAU No Repres,207,001 UN AU
+422,Dynamic Flow Computer,,Y,310,Otras Marcas UNAU No Repres,207,001 UN AU
+424,Force Flow,,Y,209,002 UN AI,,
+426,Profimess,,Y,207,001 UN AU,,
+428,ReventaLocal,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+430,Otros Importacion,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+464,Suministros Industriales,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+516,ReventaLocal2,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+518,Servicios2,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+596,Red Valve,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+598,Gauge.Wika,,Y,207,001 UN AU,,
+703,Federal Signal,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+707,Kobold,,Y,310,Otras Marcas UNAU No Repres,207,001 UN AU
+711,Salmson,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+791,HWM,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+793,Flow-tronic,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+795,Mini-Cam,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+797,CMO Valves,,Y,308,Otras Marcas UNVA No Repres,211,003 UN VA
+799,Valvulas Terceros,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+801,Power-Genex,,Y,308,Otras Marcas UNVA No Repres,211,003 UN VA
+1321,Quimicos.Dosatron,,Y,209,002 UN AI,,
+1513,Hadro,,Y,207,001 UN AU,,
+1515,Sirena.Baliza,,Y,207,001 UN AU,,
+1517,Equip.UNAU.RvtaLocal,,Y,207,001 UN AU,,
+1519,Equip.UNAU.Importa,,Y,207,001 UN AU,,
+1521,HWM.Otros,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+1523,Hydreka,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+1525,Accesorios.Cloro,,Y,209,002 UN AI,,
+1527,ACIPCO,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+1529,Vacall,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+1531,Equip.UNAI.RvtaLocal,,Y,209,002 UN AI,,
+1533,Equip.UNAI.Importa,,Y,209,002 UN AI,,
+1537,CVS Controls,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+1539,SMC.UNVA,,Y,211,003 UN VA,,
+1541,Quadax,,Y,308,Otras Marcas UNVA No Repres,211,003 UN VA
+1543,Remington,,Y,308,Otras Marcas UNVA No Repres,211,003 UN VA
+1545,Valvulas.NoRep.Mariposa,,Y,254,Otros Tipos VVs No Repres,211,003 UN VA
+1547,Valvulas.NoRep.Bola,,Y,254,Otros Tipos VVs No Repres,211,003 UN VA
+1549,Valvulas.NoRep.Bola.Trunni,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+1551,Valvulas.NoRep.Bola.Peque,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+1553,Valvulas.NoRep.CompBrid,,Y,254,Otros Tipos VVs No Repres,211,003 UN VA
+1555,Valvulas.NoRep.CompDesli,,Y,254,Otros Tipos VVs No Repres,211,003 UN VA
+1557,Valvulas.NoRep.ControlProc,,Y,254,Otros Tipos VVs No Repres,211,003 UN VA
+1561,Valvulas.NoRep.Anular,,Y,254,Otros Tipos VVs No Repres,211,003 UN VA
+1563,Valvulas.NoRep.ControlHidr,,Y,254,Otros Tipos VVs No Repres,211,003 UN VA
+1565,Valvulas.NoRep.Ventosa,,Y,254,Otros Tipos VVs No Repres,211,003 UN VA
+1567,Valvulas.NoRep.GloboOnOff,,Y,254,Otros Tipos VVs No Repres,211,003 UN VA
+1569,Valvulas.NoRep.Seguridad,,Y,254,Otros Tipos VVs No Repres,211,003 UN VA
+1571,Valvulas.NoRep.ProteccTks,,Y,254,Otros Tipos VVs No Repres,211,003 UN VA
+1573,Valvulas.NoRep.Dardo,,Y,254,Otros Tipos VVs No Repres,211,003 UN VA
+1575,Valvulas.NoRep.ReducPres,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+1577,Valvulas.NoRep.Otros,,Y,254,Otros Tipos VVs No Repres,211,003 UN VA
+1579,Valvulas.NoRep.Tapon,,Y,254,Otros Tipos VVs No Repres,211,003 UN VA
+1581,Proy-Equipos.Autom.ABB,,N,217,Dpto_Proyectos (No Usar),215,NoElegir
+1583,Proy-Equipos.Autom.RA,,N,217,Dpto_Proyectos (No Usar),215,NoElegir
+1585,Proy-Equipos.Autom.Otros,,N,217,Dpto_Proyectos (No Usar),215,NoElegir
+1587,Proy-Equipos3ros.Importa,,N,217,Dpto_Proyectos (No Usar),215,NoElegir
+1589,Proy-Equipos3ros.RevLoc,,N,217,Dpto_Proyectos (No Usar),215,NoElegir
+1591,Proy-Servicio.GeneralRev,,N,217,Dpto_Proyectos (No Usar),215,NoElegir
+1593,Proy-Servicio.Ejec.Directa,,N,217,Dpto_Proyectos (No Usar),215,NoElegir
+1595,Proy-Documentacion,,N,217,Dpto_Proyectos (No Usar),215,NoElegir
+1597,Proy-Otros,,N,217,Dpto_Proyectos (No Usar),215,NoElegir
+1599,HSEQ-Documentacion.Vtas,,Y,219,007 Dpto_QSE,,
+1601,HSEQ-Documentacion.Proy,,Y,219,007 Dpto_QSE,,
+1603,HSEQ-Documentacion.Serv,,Y,219,007 Dpto_QSE,,
+1605,HSEQ-Servicio.Ejec.Directa,,Y,219,007 Dpto_QSE,,
+1607,HSEQ-EquiposEPPs.Vta-Alqu,,Y,219,007 Dpto_QSE,,
+1609,HSEQ-Otros,,Y,219,007 Dpto_QSE,,
+1611,Serv-EjDir.Pmarcha.UNAU,,Y,223,Ejecucion,221,006 Dpto_Servicio
+1613,Serv-EjDir.Pmarcha.UNAI,,Y,223,Ejecucion,221,006 Dpto_Servicio
+1615,Serv-EjDir.Calib.Flujo,,Y,223,Ejecucion,221,006 Dpto_Servicio
+1617,Serv-EjDir.Calib-Contrast.Analisis,,Y,223,Ejecucion,221,006 Dpto_Servicio
+1619,Serv-EjDir.Calib-Contrast.Presion,,Y,223,Ejecucion,221,006 Dpto_Servicio
+1621,Serv-EjDir.Calib-Contrast.Tempe,,Y,223,Ejecucion,221,006 Dpto_Servicio
+1623,Serv-EjDir.Calib-Contrast.DetGases,,Y,223,Ejecucion,221,006 Dpto_Servicio
+1625,Serv-EjDir.Calib-Contrast.Otros,,Y,223,Ejecucion,221,006 Dpto_Servicio
+1627,Serv-EjDir.Transp.Gamma,,Y,223,Ejecucion,221,006 Dpto_Servicio
+1629,Serv-EjDir.Capacitacion.UNAU,,Y,223,Ejecucion,221,006 Dpto_Servicio
+1631,Serv-EjDir.Capacitacion.UNAI,,Y,223,Ejecucion,221,006 Dpto_Servicio
+1633,Serv-EjDir.Repar-Diagnos.UNAU,,Y,223,Ejecucion,221,006 Dpto_Servicio
+1635,Serv-EjDir.Repar-Diagnos.UNAI,,Y,223,Ejecucion,221,006 Dpto_Servicio
+1637,Serv-EjDir.Mntto.AUMA,,Y,223,Ejecucion,221,006 Dpto_Servicio
+1639,Serv-EjDir.SupervisionSitio,,Y,223,Ejecucion,221,006 Dpto_Servicio
+1641,Serv-EjDir.Otros.UNAU,,Y,223,Ejecucion,221,006 Dpto_Servicio
+1643,Serv-EjInd.Pmarcha.UNAU,,N,225,Dpto_Servicio-Ejec. Indirecta,215,NoElegir
+1645,Serv-EjInd.Pmarcha.UNAI,,N,225,Dpto_Servicio-Ejec. Indirecta,215,NoElegir
+1647,Serv-EjInd.Calibración.Flujo,,N,225,Dpto_Servicio-Ejec. Indirecta,215,NoElegir
+1649,Serv-EjInd.Calibración.Analisis,,N,225,Dpto_Servicio-Ejec. Indirecta,215,NoElegir
+1651,Serv-EjInd.Calibración.Presion,,N,225,Dpto_Servicio-Ejec. Indirecta,215,NoElegir
+1653,Serv-EjInd.Calibración.Tempe,,N,225,Dpto_Servicio-Ejec. Indirecta,215,NoElegir
+1655,Serv-EjInd.Calibración.DetGases,,N,225,Dpto_Servicio-Ejec. Indirecta,215,NoElegir
+1657,Serv-EjInd.Calibración.Otros,,N,225,Dpto_Servicio-Ejec. Indirecta,215,NoElegir
+1659,Serv-Ejind.Transporte,,N,225,Dpto_Servicio-Ejec. Indirecta,215,NoElegir
+1661,Serv-EjInd.Capacitacion.UNAU,,N,225,Dpto_Servicio-Ejec. Indirecta,215,NoElegir
+1663,Serv-EjInd.Capacitacion.UNAI,,N,225,Dpto_Servicio-Ejec. Indirecta,215,NoElegir
+1665,Serv-EjInd.Repar-Diagnos.UNAU,,N,225,Dpto_Servicio-Ejec. Indirecta,215,NoElegir
+1667,Serv-EjInd.Repar-Diagnos.UNAI,,N,225,Dpto_Servicio-Ejec. Indirecta,215,NoElegir
+1669,Serv-EjInd.Mantenimiento,,N,225,Dpto_Servicio-Ejec. Indirecta,215,NoElegir
+1671,Serv-EjInd.SupervisionSitio,,N,225,Dpto_Servicio-Ejec. Indirecta,215,NoElegir
+1673,Serv-EjInd.Otros,,N,225,Dpto_Servicio-Ejec. Indirecta,215,NoElegir
+1675,Serv-Equip.VtaRepuestos,,Y,256,Equipos,221,006 Dpto_Servicio
+1677,Serv-Equip.Garantia,,Y,256,Equipos,221,006 Dpto_Servicio
+1679,Serv-EjInd.Capacitacion.UNVA,,N,225,Dpto_Servicio-Ejec. Indirecta,215,NoElegir
+1681,Serv-EjInd.Repar-Diagnos.UNVA,,N,225,Dpto_Servicio-Ejec. Indirecta,215,NoElegir
+1683,Serv-EjInd.Pmarcha.UNVA,,N,225,Dpto_Servicio-Ejec. Indirecta,215,NoElegir
+1685,Serv-EjDir.Pmarcha.UNVA,,Y,223,Ejecucion,221,006 Dpto_Servicio
+1687,Serv-EjDir.Capacitacion.UNVA,,Y,223,Ejecucion,221,006 Dpto_Servicio
+1689,Serv-EjDir.Repar-Diagnos.UNVA,,Y,223,Ejecucion,221,006 Dpto_Servicio
+1785,KITZ,,Y,308,Otras Marcas UNVA No Repres,211,003 UN VA
+44,Equipos,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+46,Servicios,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+570,Intertec,,Y,207,001 UN AU,,
+699,Donaldson,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+701,Micronics,,Y,207,001 UN AU,,
+705,Inflex,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+709,Intra-Automation,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+841,Isoil Impianti,,Y,207,001 UN AU,,
+845,Effox-Flextor,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+851,Indian Springs Mfg.,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+2957,Viar Valvole,,Y,308,Otras Marcas UNVA No Repres,211,003 UN VA
+2959,EasyTork,,Y,211,003 UN VA,,
+2961,REXA,,Y,211,003 UN VA,,
+2963,Flo-Tite,,Y,308,Otras Marcas UNVA No Repres,211,003 UN VA
+2965,DelVal,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+2967,Max-Seal ,,Y,308,Otras Marcas UNVA No Repres,211,003 UN VA
+2969,Titan,,Y,308,Otras Marcas UNVA No Repres,211,003 UN VA
+2971,AZ Armaturen/RFL Rasaii (Tapon 3ro),,Y,308,Otras Marcas UNVA No Repres,211,003 UN VA
+2975,HIMA,,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+3135,Serv-EjDir.Inst-Puest.Gamma,servalmacenajefuentradio_57,Y,223,Ejecucion,221,006 Dpto_Servicio
+3137,Proy-Servicio.Ejec.Indirecta,proyservicioejecindirecta_987,N,217,Dpto_Proyectos (No Usar),215,NoElegir
+3706,HMT Tank,hmt-tank,Y,207,001 UN AU,,
+3708,Gauge.Ashcroft,ashcroft,Y,207,001 UN AU,,
+3710,Fajas.NoRep.Pesaje,fajas-norep-pesaje,Y,207,001 UN AU,,
+3712,Fajas.NoRep.ProteccFajas,fajas-norep-proteccfajas,Y,207,001 UN AU,,
+3714,Fajas.NoRep.Otros,fajas-norep-otros,Y,207,001 UN AU,,
+3716,Valvulas.NoRep.Pinch,valvulas-norep-pinch,Y,254,Otros Tipos VVs No Repres,211,003 UN VA
+3718,Valvulas.NoRep.Damper,valvulas-norep-damper,Y,254,Otros Tipos VVs No Repres,211,003 UN VA
+3720,DSS Valves,dss-valves,Y,211,003 UN VA,,
+3722,Neles,neles,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+3724,Valvulas.NoRep.Cuchilla,valvulas-norep-cuchilla,Y,254,Otros Tipos VVs No Repres,211,003 UN VA
+3726,IMS,ims,Y,209,002 UN AI,,
+3728,Max-Life,max-life,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+3738,ARMAS,armas,Y,308,Otras Marcas UNVA No Repres,211,003 UN VA
+3822,SAR07.6 + GS100.3,sar07_6_gs100_3,Y,248,Codigos Internos para Clientes,215,NoElegir
+3824,SA10.2 + AM01.1,sa10_2_am01_1,Y,248,Codigos Internos para Clientes,215,NoElegir
+3826,SAR07.2 + GS50.3,sar07_2_gs50_3,Y,248,Codigos Internos para Clientes,215,NoElegir
+3828,SAR07.6 + GS63.3,sar07_6_gs63_3,Y,248,Codigos Internos para Clientes,215,NoElegir
+3830,SA14.2 + GS125.3,sa14_2_gs125_3,Y,248,Codigos Internos para Clientes,215,NoElegir
+3832,SA14.2 + GS125.3,sa14_2_gs125_3,Y,248,Codigos Internos para Clientes,215,NoElegir
+3834,SA14.2 + GS125.3,sa14_2_gs125_3,Y,248,Codigos Internos para Clientes,215,NoElegir
+3838,SA14.2 + GS125.3,sa14_2_gs125_3,Y,248,Codigos Internos para Clientes,215,NoElegir
+3840,SAR07.6 + GS80.3,sar07_6_gs80_3,Y,248,Codigos Internos para Clientes,215,NoElegir
+3842,SAR07.2 + GS50.3,sar07_2_gs50_3,Y,248,Codigos Internos para Clientes,215,NoElegir
+3844,SAR07.2 + GS63.3,sar07_2_gs63_3,Y,248,Codigos Internos para Clientes,215,NoElegir
+3846,SQR07.2 ,sqr07_2_,Y,248,Codigos Internos para Clientes,215,NoElegir
+3854,Equip.UNVA.Importa,equip_unau_importa,Y,211,003 UN VA,,
+3856,Equip.UNVA.RvtaLocal,equip_unva_rvtalocal,Y,211,003 UN VA,,
+3988,Serv-Soporte.UNAU,serv_soporte_unau,Y,258,Soporte,221,006 Dpto_Servicio
+3990,Serv-Soporte.UNAI,serv_soporte_unai,Y,258,Soporte,221,006 Dpto_Servicio
+3992,Serv-Soporte.UNVA,serv_soporte_unva,Y,258,Soporte,221,006 Dpto_Servicio
+4008,Rotomartillo Cableado DeWalt,rotomartillo_cableado_dewalt,Y,252,Herramientas Dpto Proyectos,250,099 Herramientas Disponibles CISAC
+4010,Amoladora Cableado DeWalt,amoladora_cableado_dewalt,Y,252,Herramientas Dpto Proyectos,250,099 Herramientas Disponibles CISAC
+4012,Amoladora Inalambrica DeWalt,amoladora_cableado_dewalt,Y,252,Herramientas Dpto Proyectos,250,099 Herramientas Disponibles CISAC
+4014,Rotomartillo Inalambrico DeWalt,rotomartillo_inalambrico_dewalt,Y,252,Herramientas Dpto Proyectos,250,099 Herramientas Disponibles CISAC
+4290,Valmet-Neles,valmet_neles,Y,211,003 UN VA,,
+4294,Valmet-Jamesbury,valmet_jamesbury,Y,211,003 UN VA,,
+4298,Valmet-Flowrox,valmet_flowrox,Y,211,003 UN VA,,
+4302,Valmet-Stonel,valmet_stonel,Y,211,003 UN VA,,
+4306,Valmet-Mapag,valmet_mapag,Y,211,003 UN VA,,
+4310,Valmet-Easyflow,valmet_easyflow,Y,211,003 UN VA,,
+4314,KOSO,koso,Y,211,003 UN VA,,
+4318,Ampo Poyam,ampo_poyam,Y,211,003 UN VA,,
+4364,Serv-EjDir.Contrast.Flujo,serv_ejdir_contrast_flujo,Y,223,Ejecucion,221,006 Dpto_Servicio
+4368,Serv-EjDir.Otros.Gamma,serv_ejdir_instalaci_n_gamma,Y,223,Ejecucion,221,006 Dpto_Servicio
+4376,Serv-EjDir.Almac.Gamma,serv_ejdir_almac_gamma,Y,223,Ejecucion,221,006 Dpto_Servicio
+4380,Serv-EjDir.Otros.UNVA,serv_ejdir_otros_gamma,Y,223,Ejecucion,221,006 Dpto_Servicio
+4530,Serv-EjDir.VerificaciónElectrónica.UNAU,serv_ejdir_verificaci_nelectr_nica_unau,Y,223,Ejecucion,221,006 Dpto_Servicio
+4566,Proy-Equipos.Automatizacion,proy_equipos_autom,N,217,Dpto_Proyectos (No Usar),215,NoElegir
+4570,Proy-Ingenieria,proy_ingenieria,N,217,Dpto_Proyectos (No Usar),215,NoElegir
+4574,Proy-Equipos.MaterialesElectricos,proy_equipos_materialeselectricos,N,217,Dpto_Proyectos (No Usar),215,NoElegir
+4578,Proy-Equipos.MaterialesMecanicos,proy_equipos_materialesmecanicos,N,217,Dpto_Proyectos (No Usar),215,NoElegir
+4582,Endress+Hauser-Flujo,endress_hauser_flujo,Y,207,001 UN AU,,
+4586,Endress+Hauser-Nivel,endress_hauser_nivel,Y,207,001 UN AU,,
+4590,Endress+Hauser-Analisis,endress_hauser_analisis,Y,207,001 UN AU,,
+4594,Endress+Hauser-Presion,endress_hauser_presion,Y,207,001 UN AU,,
+4598,Endress+Hauser-Temperatura,endress_hauser_temperatura,Y,207,001 UN AU,,
+4602,Endress+Hauser-Sistemas,endress_hauser_sistemas,Y,207,001 UN AU,,
+4606,Endress+Hauser-BUS,endress_hauser_bus,Y,207,001 UN AU,,
+4610,Scantech,scantech,Y,207,001 UN AU,,
+4614,DataloggerRTU.General,ijinus,Y,209,002 UN AI,,
+4618,FAST,fast,N,314,Dpto_Ventas-Marcas Antiguas,215,NoElegir
+4622,Sommer Messtechnik,sommer_messtechnik,Y,209,002 UN AI,,
+4626,PreTratamiento.Duperon,duperon,Y,209,002 UN AI,,
+4630,Ovarro,ovarro,Y,312,Otras Marcas UNAI No Repres,209,002 UN AI
+4636,Serv-EjDir.Mntto.Otros,serv_ejdir_mntto_otros,Y,223,Ejecucion,221,006 Dpto_Servicio
+4906,Equip.UNVA.AccesFabLocal,equip_unva_accesfablocal,Y,211,003 UN VA,,
+6648,Proy.PIC.Consultoria.Electrico,proy_pic_ingenieria_electrico,Y,304,004 Proy PIC,,
+6650,Proy.PIC.Consultoria.Gestion,proy_pic_ingenieria_gestion,Y,304,004 Proy PIC,,
+6652,Proy.PIC.Consultoria.Mecanico,proy_pic_ingenieria_mecanico,Y,304,004 Proy PIC,,
+6654,Proy.PIC.Consultoria.Civil,proy_pic_ingenieria_civil,Y,304,004 Proy PIC,,
+6656,Proy.PIC.Consultoria.Instrumentacion,proy_pic_ingenieria_instrumentacion,Y,304,004 Proy PIC,,
+6658,Proy.PIC.Consultoria.Calidad,proy_pic_ingenieria_calidad,Y,304,004 Proy PIC,,
+6660,Proy.PIC.Consultoria.Otros,proy_pic_ingenieria_otros,Y,304,004 Proy PIC,,
+6662,Proy.PIC.Material.Automatizacion,proy_pic_material_electycontrol,Y,304,004 Proy PIC,,
+6666,Proy.PIC.Material.Neum,proy_pic_material_neum,Y,304,004 Proy PIC,,
+6670,Proy.PIC.Material.Mecanicos,proy_pic_material_mec_nicos,Y,304,004 Proy PIC,,
+6674,Proy.PIC.Material.Civil,proy_pic_material_civil,Y,304,004 Proy PIC,,
+6678,Proy.PIC.Material.Otros,proy_pic_material_otros,Y,304,004 Proy PIC,,
+6682,Proy.PIC.MObra.InstElec.AI,proy_pic_instelec_ai,Y,304,004 Proy PIC,,
+6684,Proy.PIC.MObra.InstElec.AU,proy_pic_instelec_au,Y,304,004 Proy PIC,,
+6686,Proy.PIC.MObra.InstElec.VA,proy_pic_instelec_va,Y,304,004 Proy PIC,,
+6688,Proy.PIC.MObra.InstElec.Otros,proy_pic_instelec_otros,Y,304,004 Proy PIC,,
+6690,Proy.PIC.MObra.InstMeca.AI,proy_pic_instmeca_ai,Y,304,004 Proy PIC,,
+6692,Proy.PIC.MObra.InstMeca.AU,proy_pic_instmeca_au,Y,304,004 Proy PIC,,
+6694,Proy.PIC.MObra.InstMeca.VA,proy_pic_instmeca_va,Y,304,004 Proy PIC,,
+6696,Proy.PIC.MObra.InstMeca.Otros,proy_pic_instmeca_otros,Y,304,004 Proy PIC,,
+6698,Proy.PIC.MObra.Skids.AU,proy_pic_skids_au,Y,304,004 Proy PIC,,
+6702,Proy.PIC.MObra.Skids.AI,proy_pic_skids_ai,Y,304,004 Proy PIC,,
+6706,Proy.PIC.MObra.Skids.VA,proy_pic_skids_va,Y,304,004 Proy PIC,,
+6710,Proy.PIC.MObra.Skids.Otros,proy_pic_skids_otros,Y,304,004 Proy PIC,,
+6720,Proy.PIC.MObra.FabConst.Tks,proy_pic_fabconst_tks,Y,304,004 Proy PIC,,
+6722,Proy.PIC.MObra.FabConst.Piping,proy_pic_fabconst_piping,Y,304,004 Proy PIC,,
+6724,Proy.PIC.MObra.FabConst.EstrFija,proy_pic_fabconst_estrfija,Y,304,004 Proy PIC,,
+6726,Proy.PIC.MObra.FabConst.Otros,proy_pic_fabconst_otros,Y,304,004 Proy PIC,,
+6728,Proy.PIC.MObra.ObraCivil.General,proy_pic_obracivil_general,Y,304,004 Proy PIC,,
+6732,Proy.PIC.MObraEspe.MontMaquinas,proy_pic_servespe_montmaquinas,Y,304,004 Proy PIC,,
+6734,Proy.PIC.MObraEspe.Rigging,proy_pic_servespe_rigging,Y,304,004 Proy PIC,,
+6736,Proy.PIC.MObraEspe.Otros,proy_pic_servespe_otros,Y,304,004 Proy PIC,,
+6738,Proy.PAU.Consultoria.Gestion,proy_pau_ingenieria_gestion,Y,306,005 Proy PAU,,
+6740,Proy.PIC.MObra.TksAlmac.General,proy_pic_tksalmac_general,Y,304,004 Proy PIC,,
+6742,Proy.PAU.Consultoria.Automatizacion,proy_pau_ingenieria_electycontrol,Y,306,005 Proy PAU,,
+6744,Proy.PAU.Consultoria.Neumatica,proy_pau_ingenieria_neumatica,Y,306,005 Proy PAU,,
+6746,Proy.PAU.Consultoria.Instrumentacion,proy_pau_ingenieria_instrumentacion,Y,306,005 Proy PAU,,
+6748,Proy.PAU.Consultoria.Calidad,proy_pau_ingenieria_calidad,Y,306,005 Proy PAU,,
+6750,Proy.PAU.Consultoria.Otros,proy_pau_ingenieria_otros,Y,306,005 Proy PAU,,
+6752,Proy.PAU.Material.Automatizacion,proy_pau_material_hwyswdecontrol,Y,306,005 Proy PAU,,
+6756,Proy.PAU.Material.Electricidad,proy_pau_material_electycontrol,Y,306,005 Proy PAU,,
+6760,Proy.PAU.Material.Neumatica,proy_pau_material_neumatica,Y,306,005 Proy PAU,,
+6764,Proy.PAU.Material.Cables,proy_pau_material_cables,Y,306,005 Proy PAU,,
+6768,Proy.PAU.Material.Otros,proy_pau_material_otros,Y,306,005 Proy PAU,,
+6772,Proy.PAU.MObra.Programacion,proy_pau_servicios_programacion,Y,306,005 Proy PAU,,
+6774,Proy.PAU.MObra.CommPEM,proy_pau_servicios_commpemcapa,Y,306,005 Proy PAU,,
+6776,Proy.PAU.MObra.PostVenta,proy_pau_servicios_postventa,Y,306,005 Proy PAU,,
+6778,Proy.PAU.MObra.Mantto,proy_pau_servicios_manto,Y,306,005 Proy PAU,,
+6780,Proy.PAU.MObra.ArmaTablero.Elec,proy_pau_servicios_armatablero_elec,Y,306,005 Proy PAU,,
+6782,Proy.PAU.MObra.ArmaTablero.Neum,proy_pau_servicios_armatablero_neum,Y,306,005 Proy PAU,,
+6784,Proy.PAU.MObra.Otros,proy_pau_servicios_otros,Y,306,005 Proy PAU,,
+6786,Proy.PAU.Wireless,proy_pau_busesinfraotwireless,Y,306,005 Proy PAU,,
+6788,Proy.PAU.ControlVelocyMovim,proy_pau_controlvelocymovim,Y,306,005 Proy PAU,,
+6790,Proy.PAU.SoftwareCapa3,proy_pau_softwarecapa3,Y,306,005 Proy PAU,,
+6792,Proy.PAU.OtrosProd.Robotica,proy_pau_otrosprod_robotica,Y,306,005 Proy PAU,,
+6794,Proy.PAU.OtrosProd.Gemelos,proy_pau_otrosprod_gemelos,Y,306,005 Proy PAU,,
+6796,Proy.PAU.OtrosProd.RealidadAumen,proy_pau_otrosprod_realidadaumen,Y,306,005 Proy PAU,,
+6798,Proy.PAU.OtrosProd.GestionActivos,proy_pau_otrosprod_gestionactivos,Y,306,005 Proy PAU,,
+6800,Proy.PAU.OtrosProd.Otros,proy_pau_otrosprod_otros,Y,306,005 Proy PAU,,
+6922,Proy.PIC.Material.Electricidad,proy_pic_material_electricidad,Y,304,004 Proy PIC,,
+6926,Proy.PAU.Consultoria.Electricidad,proy_pau_consultoria_automatizacion,Y,306,005 Proy PAU,,
+7602,Gauge.Winters,gauge_winters,Y,207,001 UN AU,,
+7606,Asystom,asystom,Y,207,001 UN AU,,
+7610,Endress+Hauser-SICK,endress_sick,Y,207,001 UN AU,,
+7614,Endress+Hauser-IMKO,endress_hauser_imko,Y,207,001 UN AU,,
+7618,ActuadoresElec.Rotork,actuadoreselec_rotork,Y,211,003 UN VA,,
+7622,Evoqua-Xylem.Otros,evoqua_xylem_otros,Y,209,002 UN AI,,
+7626,Evoqua-Xylem.UV,evoqua_xylem_uv,Y,209,002 UN AI,,
+7630,Quimicos.Otros,quimicos_otros,Y,209,002 UN AI,,
+7634,PreTratamiento.Quilton,pretratamiento_quilton,Y,209,002 UN AI,,
+7638,PreTratamiento.Passavant,pretratamiento_passavant,Y,209,002 UN AI,,
+7642,Sewerin.Agua,sewerin_agua,Y,209,002 UN AI,,
+7646,Sewerin.Gas,sewerin_gas,Y,209,002 UN AI,,
+7650,Sewerin.Localizacion,sewerin_localizacion,Y,209,002 UN AI,,
+7654,BinderGroup.Aireacion,bindergroup_aireacion,Y,209,002 UN AI,,
+7658,BinderGroup.Gas,bindergroup_gas,Y,209,002 UN AI,,
+7662,AquaData,aquadata,Y,209,002 UN AI,,
+7666,Micromedidores.General,micromedidores_general,Y,209,002 UN AI,,
+7670,HidroyMeteo.General,hidroymeteo_general,Y,209,002 UN AI,,
+7674,EquipLaboratorio.General,equiplaboratorio_general,Y,209,002 UN AI,,
+7678,EquipAlcantarillado.General,equipalcantarillado_general,Y,209,002 UN AI,,
+7682,AguaNoFacturada.General,aguanofacturada_general,Y,209,002 UN AI,,
+8180,Serv-EjDir.Armado.UNVA,por_completar_servicio_de_armado_v_lvulas_actuador_unva,Y,223,Ejecucion,221,006 Dpto_Servicio
+8184,Serv-EjDir.PruebaFugas.UNAU,por_completar,Y,223,Ejecucion,221,006 Dpto_Servicio
+8188,Serv-EjDir.MnttoFlujo.UNAU,serv_ejdir_mnttoflujo_unau,Y,223,Ejecucion,221,006 Dpto_Servicio
+8192,Serv-EjDir.Mntto.Rotork,serv_ejdir_mntto_rotork,Y,223,Ejecucion,221,006 Dpto_Servicio
+8196,Serv-EjDir.Mntto.Válvulas,serv_ejdir_mntto_v_lvulas,Y,223,Ejecucion,221,006 Dpto_Servicio
+8200,Serv-EjDir.Gest-Res.Gamma,serv_ejdir_gest_res_gamma,Y,223,Ejecucion,221,006 Dpto_Servicio
+8298,FLSmidth (Technequip-Krebs),flsmidth_technequip_krebs,Y,308,Otras Marcas UNVA No Repres,211,003 UN VA
+8328,Serv-Soporte.DptoProyectos,serv_soporte_dptoproyectos,Y,258,Soporte,221,006 Dpto_Servicio
+8330,Serv-Soporte.DptoServicios,serv_soporte_dptoservicios,Y,258,Soporte,221,006 Dpto_Servicio
