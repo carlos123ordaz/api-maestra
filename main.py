@@ -1414,7 +1414,7 @@ class SolicitudBoletoPDFRequest(BaseModel):
 
 
 _TIPO_LABEL: dict[str, str] = {
-    "aereo": "Aéreo", "terrestre": "Terrestre",
+    "aereo": "Aéreo", "terrestre": "Terrestre", "aereo_terrestre": "Aéreo y Terrestre",
     "nacional": "Nacional", "internacional": "Internacional",
     "ida": "Compra de boleto de Ida",
     "regreso": "Compra de boleto de Regreso",
