@@ -4,15 +4,17 @@ import io
 import csv
 import asyncio
 import pathlib
+import base64
+import urllib.parse
 from datetime import datetime
 from typing import Optional
 
 import fitz  # PyMuPDF
 import httpx
 import google.generativeai as genai
-from fastapi import FastAPI, File, UploadFile, HTTPException
+from fastapi import FastAPI, File, UploadFile, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse, StreamingResponse
+from fastapi.responses import JSONResponse, StreamingResponse, RedirectResponse
 from pydantic import BaseModel
 from dotenv import load_dotenv
 from PIL import Image
@@ -30,6 +32,13 @@ from reportlab.lib.colors import HexColor
 
 _ENV_PATH = os.path.join(os.path.dirname(__file__), ".env")
 load_dotenv(_ENV_PATH)
+
+# ── Microsoft OAuth config ────────────────────────────────────────────────────
+_MS_CLIENT_ID     = os.getenv("MS_CLIENT_ID", "")
+_MS_CLIENT_SECRET = os.getenv("MS_CLIENT_SECRET", "")
+_MS_TENANT_ID     = os.getenv("MS_TENANT_ID", "")
+_FRONTEND_URL     = os.getenv("FRONTEND_URL", "https://project-tracker-prod.vercel.app")
+_API_URL          = os.getenv("API_URL", "")   # ej: https://tu-api.railway.app
 
 app = FastAPI(
     title="Extractor de Presupuesto",
@@ -236,6 +245,78 @@ def root():
 @app.get("/health")
 def health():
     return {"status": "ok", "api_key_configurada": bool(os.getenv("GEMINI_API_KEY"))}
+
+
+# ── Microsoft OAuth ───────────────────────────────────────────────────────────
+
+@app.get("/auth/microsoft/login")
+async def ms_login(return_path: str = Query(default="/")):
+    """Genera la URL de autorización de Microsoft y redirige al usuario."""
+    state = base64.urlsafe_b64encode(return_path.encode()).decode().rstrip("=")
+    params = urllib.parse.urlencode({
+        "client_id":     _MS_CLIENT_ID,
+        "response_type": "code",
+        "redirect_uri":  f"{_API_URL}/auth/microsoft/callback",
+        "scope":         "openid email profile User.Read",
+        "state":         state,
+        "response_mode": "query",
+    })
+    auth_url = f"https://login.microsoftonline.com/{_MS_TENANT_ID}/oauth2/v2.0/authorize?{params}"
+    return RedirectResponse(url=auth_url)
+
+
+@app.get("/auth/microsoft/callback")
+async def ms_callback(
+    code:  str = Query(default=""),
+    error: str = Query(default=""),
+    state: str = Query(default=""),
+):
+    """Recibe el código de Microsoft, lo intercambia por tokens y redirige al frontend con el usuario."""
+    # Decodificar return_path del state
+    try:
+        padding = "=" * (-len(state) % 4)
+        return_path = base64.urlsafe_b64decode(state + padding).decode()
+        if not return_path.startswith("/"):
+            return_path = "/"
+    except Exception:
+        return_path = "/"
+
+    error_redirect = f"{_FRONTEND_URL}{return_path}?ms_error=auth_failed"
+
+    if error or not code:
+        return RedirectResponse(url=error_redirect)
+
+    try:
+        token_url = f"https://login.microsoftonline.com/{_MS_TENANT_ID}/oauth2/v2.0/token"
+        async with httpx.AsyncClient(timeout=15) as client:
+            # 1. Intercambiar código por access token
+            token_resp = await client.post(token_url, data={
+                "client_id":     _MS_CLIENT_ID,
+                "client_secret": _MS_CLIENT_SECRET,
+                "code":          code,
+                "grant_type":    "authorization_code",
+                "redirect_uri":  f"{_API_URL}/auth/microsoft/callback",
+                "scope":         "openid email profile User.Read",
+            })
+            token_resp.raise_for_status()
+            access_token = token_resp.json().get("access_token", "")
+
+            # 2. Obtener perfil del usuario desde MS Graph
+            graph_resp = await client.get(
+                "https://graph.microsoft.com/v1.0/me",
+                headers={"Authorization": f"Bearer {access_token}"},
+            )
+            graph_resp.raise_for_status()
+            user_data = graph_resp.json()
+
+        name  = user_data.get("displayName") or ""
+        email = user_data.get("mail") or user_data.get("userPrincipalName") or ""
+
+        qs = urllib.parse.urlencode({"ms_name": name, "ms_email": email})
+        return RedirectResponse(url=f"{_FRONTEND_URL}{return_path}?{qs}")
+
+    except Exception:
+        return RedirectResponse(url=error_redirect)
 
 
 @app.post("/extraer")
