@@ -13,8 +13,8 @@ router = APIRouter(prefix="/almacen")
 # Entra ID → Registros de aplicaciones → [tu app] → Permisos de API
 #
 # Correos placeholder — reemplazar con los reales antes de producción:
-_FROM_EMAIL = "almacen@corsusa.com"   # remitente (cuenta habilitada en M365)
-_TO_EMAIL   = "compras@corsusa.com"   # destinatario
+_FROM_EMAIL = "cordaz@corsusa.com"   # remitente (cuenta habilitada en M365)
+_TO_EMAIL = "ltaipe@corsusa.com"   # destinatario
 
 
 class ItemPedido(BaseModel):
@@ -32,6 +32,15 @@ class NotificacionPedidoRequest(BaseModel):
     fecha_requerida: Optional[str] = None
     observaciones: Optional[str] = None
     items: list[ItemPedido] = []
+
+
+class NotificacionSeguimientoRequest(BaseModel):
+    numero: int
+    asunto: Optional[str] = None
+    estado: str
+    from_email: Optional[str] = None
+    firma: Optional[str] = None
+    destinatarios: list[str] = []
 
 
 async def _get_graph_token() -> str:
@@ -72,9 +81,9 @@ def _build_email_html(req: NotificacionPedidoRequest) -> str:
     if not filas_items:
         filas_items = '<tr><td colspan="4" style="padding:12px;text-align:center;color:#9ca3af;">Sin ítems registrados</td></tr>'
 
-    proveedor   = req.proveedor_sugerido or "—"
-    f_pedido    = req.fecha_pedido or "—"
-    f_req       = req.fecha_requerida or "—"
+    proveedor = req.proveedor_sugerido or "—"
+    f_pedido = req.fecha_pedido or "—"
+    f_req = req.fecha_requerida or "—"
     solicitante = req.solicitado_por or "—"
 
     return f"""<!DOCTYPE html>
@@ -195,6 +204,111 @@ def _build_email_html(req: NotificacionPedidoRequest) -> str:
 </html>"""
 
 
+def _build_seguimiento_html(req: NotificacionSeguimientoRequest) -> str:
+    numero_str = str(req.numero).zfill(4)
+    asunto = req.asunto or f"Pedido #{numero_str}"
+    firma = req.firma or "Área de Almacén"
+
+    return f"""<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
+<body style="margin:0;padding:0;background:#f3f4f6;font-family:'Segoe UI',Arial,sans-serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f3f4f6;padding:32px 0;">
+    <tr><td align="center">
+      <table width="600" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:12px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.08);">
+
+        <!-- Header -->
+        <tr>
+          <td style="background:#0047BA;padding:28px 32px;">
+            <p style="margin:0;font-size:22px;font-weight:700;color:#ffffff;letter-spacing:-0.5px;">Corsusa Internacional S.A.C.</p>
+            <p style="margin:6px 0 0;font-size:13px;color:#93b5e5;">Gestión de Almacén · Pedido #{numero_str}</p>
+          </td>
+        </tr>
+
+        <!-- Cuerpo -->
+        <tr>
+          <td style="padding:32px 32px 24px;font-size:14px;color:#374151;line-height:1.7;">
+            <p style="margin:0 0 16px;">Estimados,</p>
+            <p style="margin:0 0 16px;">
+              Se comunica que la solicitud de pedido correspondiente al
+              <strong style="color:#111827;">{asunto}</strong>
+              se encuentra actualmente
+              <span style="display:inline-block;padding:2px 10px;background:#eff6ff;color:#1d4ed8;font-weight:700;border-radius:4px;font-size:13px;">{req.estado}</span>.
+            </p>
+            <p style="margin:0 0 16px;">
+              Se viene realizando el seguimiento correspondiente a los equipos, materiales y consumibles
+              requeridos, a fin de asegurar su correcta atención dentro de los plazos establecidos.
+            </p>
+            <p style="margin:0 0 32px;">Cualquier actualización será comunicada oportunamente.</p>
+            <p style="margin:0;color:#6b7280;font-size:13px;">Atentamente,</p>
+            <p style="margin:4px 0 0;font-weight:700;color:#111827;font-size:14px;">{firma}</p>
+          </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr>
+          <td style="background:#f9fafb;border-top:1px solid #e5e7eb;padding:16px 32px;">
+            <p style="margin:0;font-size:11.5px;color:#9ca3af;text-align:center;">
+              Correo generado desde el sistema de almacén de
+              <strong style="color:#6b7280;">Corsusa Internacional S.A.C.</strong>
+            </p>
+          </td>
+        </tr>
+
+      </table>
+    </td></tr>
+  </table>
+</body>
+</html>"""
+
+
+@router.post("/pedidos/notificar-seguimiento")
+async def notificar_seguimiento_pedido(req: NotificacionSeguimientoRequest):
+    """Envía un correo de seguimiento de estado del pedido via Microsoft Graph."""
+    if not req.destinatarios:
+        raise HTTPException(
+            status_code=400, detail="Se requiere al menos un destinatario.")
+
+    numero_str = str(req.numero).zfill(4)
+
+    try:
+        token = await _get_graph_token()
+    except HTTPException as e:
+        raise e
+
+    subject = f"[Pedido #{numero_str}] Seguimiento — {req.estado}"
+    html = _build_seguimiento_html(req)
+
+    payload = {
+        "message": {
+            "subject": subject,
+            "body": {"contentType": "HTML", "content": html},
+            "toRecipients": [
+                {"emailAddress": {"address": d}} for d in req.destinatarios
+            ],
+        },
+        "saveToSentItems": True,
+    }
+
+    sender = req.from_email or _FROM_EMAIL
+
+    async with httpx.AsyncClient() as client:
+        r = await client.post(
+            f"https://graph.microsoft.com/v1.0/users/{sender}/sendMail",
+            headers={"Authorization": f"Bearer {token}",
+                     "Content-Type": "application/json"},
+            json=payload,
+        )
+
+    if r.status_code not in (200, 202):
+        raise HTTPException(
+            status_code=502,
+            detail=f"Error al enviar correo: {r.status_code} — {r.text[:400]}",
+        )
+
+    return {"ok": True, "from": sender, "to": req.destinatarios, "subject": subject}
+
+
 @router.post("/pedidos/notificar-enviado")
 async def notificar_pedido_enviado(req: NotificacionPedidoRequest):
     """
@@ -211,7 +325,7 @@ async def notificar_pedido_enviado(req: NotificacionPedidoRequest):
         raise e
 
     subject = f"[Pedido #{numero_str}] Material en camino — Corsusa Almacén"
-    html    = _build_email_html(req)
+    html = _build_email_html(req)
 
     payload = {
         "message": {
