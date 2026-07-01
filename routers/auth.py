@@ -67,9 +67,9 @@ async def ms_callback(
             graph_resp.raise_for_status()
             user_data = graph_resp.json()
 
-        name  = user_data.get("displayName") or ""
-        email = user_data.get("mail") or user_data.get("userPrincipalName") or ""
-
+        name = user_data.get("displayName") or ""
+        email = user_data.get("mail") or user_data.get(
+            "userPrincipalName") or ""
         qs = urllib.parse.urlencode({"ms_name": name, "ms_email": email})
         return RedirectResponse(url=f"{FRONTEND_URL}{return_path}?{qs}")
 
