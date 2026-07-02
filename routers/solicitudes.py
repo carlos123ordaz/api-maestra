@@ -152,7 +152,7 @@ def _build_solicitud_boleto_pdf(req: SolicitudBoletoPDFRequest) -> bytes:  # noq
     # 1. HEADER
     hdr = Table([[
         [Paragraph("CORSUSA INTERNATIONAL S.A.C.", s_company),
-         Paragraph("RUC 20601182553", s_ruc)],
+         Paragraph("RUC 20101009174", s_ruc)],
         [Paragraph("SOLICITUD DE COMPRA DE BOLETO", s_doctitle),
          Paragraph(f"N° {req.submission_id[:8].upper()}", s_docid)],
     ]], colWidths=[CW * 0.55, CW * 0.45])
@@ -301,7 +301,7 @@ def _build_solicitud_boleto_pdf(req: SolicitudBoletoPDFRequest) -> bytes:  # noq
         canvas.drawCentredString(PW / 2, 1.4 * cm,
                                  "Documento generado automáticamente — uso interno Corsusa")
         canvas.drawCentredString(PW / 2, 1.1 * cm,
-                                 "CORSUSA INTERNATIONAL S.A.C.  ·  RUC 20601182553")
+                                 "CORSUSA INTERNATIONAL S.A.C.  ·  RUC 20101009174")
         canvas.restoreState()
 
     doc = SimpleDocTemplate(
